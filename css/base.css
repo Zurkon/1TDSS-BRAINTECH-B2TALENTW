@@ -1,0 +1,93 @@
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/* Ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+:root {
+  --text-light: #F5F5F5;
+  --text-primary: #4D4D4D;
+  --title-primary: #18698D;
+  --title-secondary: #04222F;
+  --aqua: #08DBDB;
+  --bg-main: #042F41;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bg-main {
+  background-color: var(--bg-main);
+}
+
+.navbar-main .nav-item a {
+  color: var(--text-light);
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.navbar-main .nav-item .nav-link {
+  position: relative;
+}
+
+.navbar-main .nav-item .nav-link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar-main .nav-item .nav-link:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.navbar-main .navbar-toggler {
+  color: rgba(255, 255, 255, .5);
+  border-color: var(--aqua);
+}
+
+.navbar-main .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.btn-outline-main {
+  border-color: var(--aqua);
+}
+
+.btn-outline-main:hover {
+  background-color: var(--aqua);
+}
+
+.logo-img-fiap {
+  height: 30px;
+}
+.logo-img-b2w {
+  height: 60px;
+}
+.logo-img-brain {
+  height: 35px;
+}
+
+.logo-footer {
+  height: 10vh;
+}
+
+@media (max-width: 576px) {
+  .logo-img-fiap {
+    height: 20px;
+  }
+  .logo-img-b2w {
+    height: 50px;
+  }
+  .logo-img-brain {
+    height: 25px;
+  }
+}
