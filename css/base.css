@@ -20,6 +20,10 @@ body {
   height: 100vh;
 }
 
+.vh-75 {
+  height: 75vh;
+}
+
 .bg-main {
   background-color: var(--bg-main);
 }
@@ -109,14 +113,14 @@ body {
 }
 
 .text {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 300;
   color: var(--text-primary);
   line-height: 1.2;
 }
 
 .text-big {
-  font-size: 30px;
+  font-size: 16px;
 }
 
 .line-height-big {
@@ -126,9 +130,11 @@ body {
 .logo-img-fiap {
   height: 30px;
 }
+
 .logo-img-b2w {
   height: 60px;
 }
+
 .logo-img-brain {
   height: 35px;
 }
@@ -138,14 +144,42 @@ body {
 }
 
 /* PÁGINA SOBRE */
-.main .col-5 .title-primary {
-  font-size: 44px;
+.main .col-10 .title-primary {
+  font-size: 30px;
 }
 
-.main .col-5 .title-secondary {
-  font-size: 28px;
+.main .col-10 .title-secondary {
+  font-size: 24px;
   font-weight: 300;
 }
+
+.b2talentw {
+  height: 32px;
+}
+
+.img-about {
+  height: 160px;
+}
+/* PÁGINA SOBRE */
+
+/* PÁGINA PARCEIRA */
+.main .title-secondary {
+  font-size: 26px;
+}
+
+.main h2.text-big {
+  font-size: 20px;
+}
+
+.img-b2w {
+  height: 100px;
+}
+
+.b2w-plot {
+  width: 100%;
+  height: auto;
+}
+/* PÁGINA PARCEIRA */
 
 @media (max-width: 576px) {
   .logo-img-fiap {
@@ -163,4 +197,48 @@ body {
   .vh-md-90{
     height: 90vh;
   }
+
+  .title-primary {
+    font-size: 24px;
+  }
+  
+  .title-secondary {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .text-big {
+    font-size: 22px;
+  }
+
+  /* PÁGINA SOBRE */
+  .b2talentw {
+    height: 44px;
+  }
+
+  .img-about {
+    height: 240px;
+  }
+  /* PÁGINA SOBRE */
+
+  /* PÁGINA PARCEIRA */
+  .main .title-secondary {
+    font-size: 40px;
+  }
+
+  .main h2.text-big {
+    font-size: 24px;
+  }
+
+  .img-b2w {
+    height: 100px;
+  }
+
+  .b2w-plot {
+    width: 50%;
+  }
+  /* PÁGINA PARCEIRA */
 }
