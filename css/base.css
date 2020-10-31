@@ -181,6 +181,37 @@ body {
 }
 /* PÁGINA PARCEIRA */
 
+/* PÁGINA DESENVOLVEDORES */
+.img-team {
+  height: 36px;
+}
+
+.developer {
+  border-radius: 36px;
+  background-color: #F5F5F5;
+  width: 100%;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.developer .photo {
+  width: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.developer .photo.left, .developer .photo.right {
+  left: 50%;
+  top: 0px;
+}
+
+.developer .ml, .developer .mr {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* PÁGINA DESENVOLVEDORES */
+
 @media (max-width: 576px) {
   .logo-img-fiap {
     height: 20px;
@@ -233,12 +264,46 @@ body {
     font-size: 24px;
   }
 
-  .img-b2w {
-    height: 100px;
-  }
-
   .b2w-plot {
     width: 50%;
   }
   /* PÁGINA PARCEIRA */
+
+  /* PÁGINA DESENVOLVEDORES */
+  .img-team {
+    height: 54px;
+  }
+
+  .developer {
+    width: 90%;
+    height: 200px;
+  }
+  
+  .developer .photo {
+    width: 200px;
+    transform: translate(0, 0);
+  }
+  
+  .developer .photo.left {
+    left:-100px;
+    top: 0;
+    bottom: 0;
+    right: auto;
+  }
+  
+  .developer .photo.right {
+    right:-100px;
+    top: 0;
+    bottom: 0;
+    left: auto;
+  }
+  
+  .developer .ml {
+    margin-left: 100px;
+  }
+  
+  .developer .mr {
+    margin-right: 100px;
+  }
+  /* PÁGINA DESENVOLVEDORES */
 }
