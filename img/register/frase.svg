@@ -1,0 +1,57 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 351.87 660.1">
+  <defs>
+    <style>
+      .cls-1,
+      .cls-2,
+      .cls-3,
+      .cls-4,
+      .cls-6 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        font-size: 193px;
+        font-family: Helvetica, sans-serif;
+        font-weight: 300;
+      }
+
+      .cls-2,
+      .cls-3,
+      .cls-4,
+      .cls-6 {
+        fill: #3e5b67;
+      }
+
+      .cls-3 {
+        font-size: 114px;
+      }
+
+      .cls-3,
+      .cls-6 {
+        font-family: Helvetica;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        font-size: 95px;
+        font-family: Helvetica, sans-serif;
+        font-weight: 600;
+      }
+
+      .cls-5 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-6 {
+        font-size: 141px;
+      }
+    </style>
+  </defs>
+  <g id="Seu" class="cls-1"><text class="cls-2" transform="translate(23 164.15)">Seu</text></g>
+  <g id="futuro" class="cls-1"><text class="cls-3" transform="translate(6 284.15)">futuro</text></g>
+  <g id="começa" class="cls-1"><text class="cls-4" transform="translate(0 400.15)">
+      <tspan class="cls-5">c</tspan>
+      <tspan x="46.08" y="0">omeça</tspan>
+    </text></g>
+  <g id="aqui_" data-name="aqui " class="cls-1"><text class="cls-6" transform="translate(6 559.15)">aqui!</text></g>
+</svg>

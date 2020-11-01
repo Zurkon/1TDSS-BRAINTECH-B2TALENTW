@@ -1,7 +1,5 @@
 /* Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-/* Ubuntu */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
 
 :root {
   --text-light: #F5F5F5;
@@ -9,15 +7,18 @@
   --title-primary: #18698D;
   --title-secondary: #04222F;
   --aqua: #08DBDB;
+  --light-aqua: #95FAF5;
   --bg-main: #042F41;
+  --blue: #065BC0;
+  --blue-border: #18698D;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-.vh-100 {
-  height: 100vh;
+main.bg-white-aqua-b2talentw {
+  margin-top: 50px;
 }
 
 .vh-75 {
@@ -40,10 +41,33 @@ body {
   background-image: linear-gradient(30deg,#fff 0%, #B3EDED 100%);
 }
 
-.bg-white-aqua-90deg {
+.bg-white-aqua-0deg {
   background-image: linear-gradient(0deg,#fff 0%, #B3EDED 150%);
 }
 
+.bg-white-aqua-b2talentw {
+  background-image: linear-gradient(0deg,#95FAF5 0%, #C4F8F6 50%, #54B9B5 100%);
+}
+
+/* LIGHT NAVBAR */
+.navbar-main-dark .nav-item a {
+  color: var(--title-primary);
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.navbar-main-dark .navbar-toggler {
+  color: rgba(255, 255, 255, .5);
+  border-color: var(--title-primary);
+}
+
+.navbar-main-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/* LIGHT NAVBAR */
+
+/* DARK NAVBAR */
 .navbar-main .nav-item a {
   color: var(--text-light);
   font-weight: 300;
@@ -80,6 +104,7 @@ body {
 .navbar-main .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+/* DARK NAVBAR */
 
 .btn-outline-main {
   border-color: var(--aqua);
@@ -125,6 +150,10 @@ body {
 
 .line-height-big {
   line-height: 1.8;;
+}
+
+.letter-space-0 {
+  letter-spacing: normal;
 }
 
 .logo-img-fiap {
@@ -209,10 +238,182 @@ body {
   margin-left: 0px;
   margin-right: 0px;
 }
-
 /* PÁGINA DESENVOLVEDORES */
 
-@media (max-width: 576px) {
+/* PÁGINA REGISTER */
+.cadastro-text a:hover {
+  text-decoration: none;
+}
+
+.cadastro-text {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--text-primary);
+}
+
+.cadastro-input {
+  border: 1px var(--title-primary) solid;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.cadastro-input::placeholder {
+  font-size: 12px;
+}
+
+input[type=password].cadastro-input {
+  width: 45%;
+}
+
+.cadastro-input:focus {
+  outline: none;
+  border: 1px var(--aqua) solid;
+}
+
+.cadastro-button {
+  border-radius: 20px;
+  border: 1px var(--light-aqua) solid;
+  background-color: var(--light-aqua);
+}
+
+.cadastro-button:hover {
+  border-radius: 20px;
+  border: 1px var(--aqua) solid;
+  color: var(--text-light);
+  background-color: var(--aqua);
+}
+
+.cadastro-button:focus {
+  outline: none;
+  border: 1px var(--aqua) solid;
+}
+/* PÁGINA REGISTER */
+
+/* PÁGINA EDITAR PERFIL */
+.profile {
+  position: relative;
+}
+
+.menu-button {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  z-index: 150;
+  background-color: white;
+  box-shadow: 10px 0 10px 0 rgba(0, 0, 0, .15);
+  transition: all 500ms cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.menu-button.show {
+  left: 250px;
+}
+
+.profile .menu {
+  position: absolute;
+  padding: 20px;
+  width: 250px;
+  background-color: #fff;
+  z-index: 100;
+  top: 0;
+  left: -250px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .2);
+  transition: left 500ms cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.profile .menu.show {
+  left:0;
+}
+
+.seta {
+  width: 0; 
+  height: 0; 
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 32px solid var(--title-primary);
+}
+
+.profile .photo {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.profile .photo .edit {
+  position: absolute;
+  bottom: 0;
+  left:0;
+}
+
+.profile .option {
+  padding: 10px 20px;
+}
+
+.profile .option.selected {
+  border-right: 3px var(--blue-border) solid;
+}
+
+.profile .option a {
+  color: #000000;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.profile .option a:hover {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.profile .option.selected a {
+  font-weight: 700;
+}
+
+.profile-edit {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: .5rem 1rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid var(--blue-border);
+  border-radius: 5px;
+  overflow: auto;
+  resize: none;
+}
+
+.profile-edit:focus {
+  border-color: var(--blue-border);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.2);
+}
+
+.profile-submit {
+  border-radius: 10px;
+  border: 1px var(--light-aqua) solid;
+  background-color: var(--light-aqua);
+  padding: 15px 60px;
+}
+
+.profile-submit:hover {
+  border-radius: 10px;
+  border: 1px var(--aqua) solid;
+  color: var(--text-light);
+  background-color: var(--aqua);
+}
+
+.profile-submit:focus {
+  outline: none;
+  border: 1px var(--aqua) solid;
+}
+/* PÁGINA EDITAR PERFIL */
+
+@media (max-width: 575px) {
   .logo-img-fiap {
     height: 20px;
   }
@@ -222,6 +423,12 @@ body {
   .logo-img-brain {
     height: 25px;
   }
+
+  /* PÁGINA REGISTER */
+  input[type=password].cadastro-input {
+    width: 100%;
+  }
+  /* PÁGINA REGISTER */
 }
 
 @media (min-width: 768px) {
@@ -306,4 +513,14 @@ body {
     margin-right: 100px;
   }
   /* PÁGINA DESENVOLVEDORES */
+}
+
+@media (min-width: 992px) {
+  .profile .menu {
+    position: static;
+    padding: 0px;
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+  }
 }

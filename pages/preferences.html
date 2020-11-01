@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="http://www.google.com/s2/u/0/favicons?domain=b2wmarketplace.com.br/">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="../css/base.css">
+  <title>Preferências · B2TALENTW</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top navbar-main-dark bg-white">
+
+      <div class="container-lg px-0">
+        <!-- Brand -->
+        <a class="navbar-brand mr-0 pt-0" href="../index.html">
+          <img src="../img/logo/novo_b2talentw.png" height="25" alt="Logo da B2TALENTW">
+        </a>
+        <!-- Brand -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav w-100 justify-content-end">
+            <li class="nav-item active">
+              <a class="nav-link mr-0 mr-md-2" href="#">
+                <img src="../img/perfil/icone_notificacoes.svg" height="25" alt="Icone de Notificações">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-0 mr-md-2" href="./desenvolvedores.html">VAGAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-0 mr-md-2" href="#">MEU PERFIL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-0 mr-md-2" href="../index.html">SAIR</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Links -->
+      </div>
+
+    </nav>
+  </header>
+  <!-- Header -->
+
+  <!-- Main -->
+  <main class="bg-white-aqua-b2talentw">
+
+    <div class="profile row py-4 mx-0 justify-content-center justify-content-lg-start container-xl px-0">
+
+      <div class="col-12 col-lg-3 d-flex flex-column align-items-end mb-4 mb-lg-0">
+        <div id="menu-button" class="menu-button d-flex justify-content-center align-items-center d-lg-none">
+          <div class="seta"></div>
+        </div>
+        <div id="profile-menu" class="menu">
+          <div class="photo">
+            <img src="../img/perfil/icone_user.svg" alt="Foto de Perfil do Usuário">
+            <a class="edit" href="#">
+              <img src="../img/perfil/icone_editar_foto.svg" height="48" alt="Editar Foto de Perfil">
+            </a>
+          </div>
+          <div class="option">
+            <a href="./perfil.html">Avaliação Fit Cultural</a>
+          </div>
+          <div class="option selected">
+            <a href="#">Preferências</a>
+          </div>
+          <div class="option">
+            <a href="#">Experiências</a>
+          </div>
+          <div class="option">
+            <a href="#">Habilidades</a>
+          </div>
+          <div class="option">
+            <a href="#">Informações</a>
+          </div>
+          <div class="option">
+            <a href="#">Dados Pessoais</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-10 col-md-8 px-3 px-sm-5 py-4 shadow bg-white">
+
+        <h1 class="title-primary font-weight-normal letter-space-0">Preferências</h1>
+
+        <div class="py-5 w-100">
+          <label for="carreira" class="text">Qual sua carreira de interesse?</label>
+          <select class="profile-edit" name="carreira" id="carreira">
+            <option value="" selected disabled>Selecione</option>
+            <option value="frontend">Frontend</option>
+            <option value="backend">Backend</option>
+            <option value="data-science">Cientista de Dados</option>
+            <option value="cyber-security">Cyber Security</option>
+          </select>
+        </div>
+
+        <div class="pb-5 w-100">
+          <label for="emprego" class="text">Que tipo de oferta de emprego você está disposto a considerar?</label>
+          <select class="profile-edit" name="emprego" id="emprego">
+            <option value="" selected disabled>Selecione</option>
+            <option value="clt">CLT</option>
+            <option value="pj">PJ</option>
+            <option value="estagio">Estágio</option>
+          </select>
+        </div>
+
+        <div class="pb-5 w-100">
+          <label for="local" class="text">Em qual cidade você mora?</label>
+          <select class="profile-edit" name="local" id="local">
+            <option value="" selected disabled>Selecione</option>
+            <option value="1">Embu das Artes</option>
+            <option value="2">São Paulo</option>
+            <option value="3">Campinas</option>
+            <option value="4">Osasco</option>
+            <option value="5">Taboão da Serra</option>
+            <option value="6">Santo André</option>
+            <option value="7">São Caetano</option>
+            <option value="8">Carapicuíba</option>
+          </select>
+        </div>
+
+        <div class="pb-5 w-100">
+          <label for="trabalho-longe" class="text">Tem interesse em trabalhar em outra cidade?</label>
+          <select class="profile-edit" name="trabalho-longe" id="trabalho-longe">
+            <option value="" selected disabled>Selecione</option>
+            <option value="1">Não</option>
+            <option value="2">No máximo em cidade vizinha</option>
+            <option value="3">Eu me adapto fácilmente</option>
+          </select>
+        </div>
+
+        <div class="w-100 d-flex justify-content-center">
+          <input class="profile-submit my-4 font-weight-bold" type="submit" value="ATUALIZAR">
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+  <!-- Main -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>
