@@ -17,7 +17,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-main.bg-white-aqua-b2talentw {
+main.bg-white-aqua-b2talentw, main.bg-jobs {
   margin-top: 50px;
 }
 
@@ -47,6 +47,13 @@ main.bg-white-aqua-b2talentw {
 
 .bg-white-aqua-b2talentw {
   background-image: linear-gradient(0deg,#95FAF5 0%, #C4F8F6 50%, #54B9B5 100%);
+}
+
+.bg-jobs {
+  background-image: url('../img/perfil/bg-jobs.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* LIGHT NAVBAR */
@@ -359,11 +366,13 @@ input[type=password].cadastro-input {
   color: #000000;
   letter-spacing: 1px;
   font-size: 14px;
+  display: inline-block;
+  text-align: right;
+  width: 100%;
 }
 
 .profile .option a:hover {
   text-decoration: none;
-  font-weight: 700;
 }
 
 .profile .option.selected a {
@@ -385,6 +394,10 @@ input[type=password].cadastro-input {
   border-radius: 5px;
   overflow: auto;
   resize: none;
+}
+
+input[type=date].profile-edit {
+  width: auto;
 }
 
 .profile-edit:focus {
@@ -412,6 +425,47 @@ input[type=password].cadastro-input {
   border: 1px var(--aqua) solid;
 }
 /* PÁGINA EDITAR PERFIL */
+
+.add-button {
+  background-color: var(--blue-border);
+  border: 1px solid var(--blue-border);
+  border-radius: 5px;
+  color: var(--text-light);
+  font-size: 12px;
+}
+
+.add-button:hover {
+  border: 1px var(--aqua) solid;
+  color: var(--text-light);
+  background-color: var(--aqua);
+  text-decoration: none;
+}
+
+.add-outline-button {
+  border: 1px solid var(--blue-border);
+  border-radius: 5px;
+  color: var(--blue-border);
+  font-size: 12px;
+}
+
+.add-outline-button:hover {
+  background-color: var(--blue-border);
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+/* PÁGINA VAGAS */
+
+.job-card .job-title .title-primary,
+.job-card .job-title .title-secondary {
+  font-size: 20px;
+}
+
+/* PÁGINA VAGAS */
+
+.code-card {
+  min-height: 500px;
+}
 
 @media (max-width: 575px) {
   .logo-img-fiap {

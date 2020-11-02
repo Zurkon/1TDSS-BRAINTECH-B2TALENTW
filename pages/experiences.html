@@ -11,7 +11,7 @@
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <!-- Style CSS -->
   <link rel="stylesheet" href="../css/base.css">
-  <title>Avaliação Fit Cultural · B2TALENTW</title>
+  <title>Experiências · B2TALENTW</title>
 </head>
 
 <body>
@@ -72,14 +72,14 @@
               <img src="../img/perfil/icone_editar_foto.svg" height="48" alt="Editar Foto de Perfil">
             </a>
           </div>
-          <div class="option selected">
-            <a href="#">Avaliação Fit Cultural</a>
+          <div class="option">
+            <a href="./perfil.html">Avaliação Fit Cultural</a>
           </div>
           <div class="option">
             <a href="./preferences.html">Preferências</a>
           </div>
-          <div class="option">
-            <a href="./experiences.html">Experiências</a>
+          <div class="option selected">
+            <a href="#">Experiências</a>
           </div>
           <div class="option">
             <a href="./skills.html">Habilidades</a>
@@ -96,44 +96,83 @@
       <div class="col-12 col-sm-10 col-md-8 px-3 px-sm-5 py-4 shadow bg-white">
 
         <form action="#">
-          <h1 class="title-primary font-weight-normal letter-space-0">Avaliação Fit Cultural</h1>
+          <!-- #experience -->
+          <div id="experiences">
 
-          <div class="py-5 w-100">
-            <label for="cultura" class="text">Em que tipo de cultura você se desenvolve?</label>
-            <textarea class="profile-edit" name="cultura" id="cultura" maxlength="250"
-              placeholder="Máximo de 250 characteres" rows="6"></textarea>
-          </div>
+            <!-- primeiro experience -->
+            <div>
+              <h1 class="title-primary font-weight-normal letter-space-0">Experiência Profissional</h1>
+              <div class="py-5 w-100 row mx-0">
+                <div class="col-12 col-md-6 px-0 pr-md-3">
+                  <label for="empresa1" class="text">Empresa</label>
+                  <input id="empresa1" type="text" class="profile-edit" placeholder="ex. Carrefour">
+                </div>
+                <div class="col-12 col-md-6 px-0 pl-md-3">
+                  <label for="cargo1" class="text">Cargo</label>
+                  <input id="cargo1" type="text" class="profile-edit" placeholder="ex. Vendedor de loja">
+                </div>
+              </div>
 
-          <div class="pb-5 w-100">
-            <label for="valores" class="text">Para quais valores você é atraído e qual é o seu local de trabalho
-              ideal?</label>
-            <textarea class="profile-edit" name="valores" id="valores" maxlength="250"
-              placeholder="Máximo de 250 characteres" rows="6"></textarea>
-          </div>
+              <div class="pb-5 w-100">
+                <label for="description1" class="text">Descrição</label>
+                <textarea id="description1" class="profile-edit" name="cultura" id="cultura" maxlength="250"
+                  placeholder="Máximo de 250 characteres" rows="6"></textarea>
+              </div>
 
-          <div class="pb-5 w-100">
-            <label for="motivo" class="text">Por que você quer trabalhar aqui</label>
-            <textarea class="profile-edit" name="motivo" id="motivo" maxlength="250"
-              placeholder="Máximo de 250 characteres" rows="6"></textarea>
-          </div>
+              <div class="pb-4 w-100 row mx-0">
+                <div class="col-12 col-md-6 px-0 pr-md-3">
+                  <label for="data-inicio1" class="text">Data de início</label>
+                  <input id="data-inicio1" type="date" class="profile-edit">
+                </div>
+                <div class="col-12 col-md-6 px-0 pl-md-3">
+                  <label for="data-saida1" class="text">Data de saída</label>
+                  <input id="data-saida1" type="date" class="profile-edit">
+                </div>
+                <div class="pt-4 w-100 d-flex align-items-center">
+                  <input type="checkbox" class="d-inline" name="emprego-atual" id="emprego-atual">
+                  <label for="emprego-atual" class="text ml-2 mb-0" style="font-size: 12px;"> É o meu emprego
+                    atual</label>
+                </div>
+              </div>
+            </div>
+            <!-- primeiro experience -->
 
-          <div class="pb-5 w-100">
-            <label for="cultura-opiniao" class="text">Como você descreveria nossa cultura com base no que você
-              viu</label>
-            <textarea class="profile-edit" name="cultura-opiniao" id="cultura-opiniao" maxlength="250"
-              placeholder="Máximo de 250 characteres" rows="6"></textarea>
           </div>
+          <!-- #experience -->
+          <button id="add-exp" class="add-button px-3 py-2 d-flex align-items-center">
+            <img class="mr-1" src="../img/perfil/icone_adicionar.svg" height="18" alt="Ícone Adicionar">
+            Adicionar empresa
+          </button>
 
-          <div class="pb-5 w-100">
-            <label for="cultura" class="text">Conte-me sobre uma época em que você trabalhou com ou para uma organização
-              em que sentiu que não era um forte ajuste cultural. Por que foi um mau ajuste? Caso seja seu primeiro
-              emprego, não será considera essa pergunta.</label>
-            <textarea class="profile-edit" name="cultura" id="cultura" maxlength="300"
-              placeholder="Máximo de 300 characteres" rows="6"></textarea>
+          <!-- #academic -->
+          <div id="academic" class="mt-5">
+            <!-- primeira instituição -->
+            <div>
+              <h1 class="title-primary font-weight-normal letter-space-0">Formação Acadêmica</h1>
+              <div class="py-5 w-100">
+                <label for="institute1" class="text">Instituição</label>
+                <input id="institute1" type="text" class="profile-edit">
+              </div>
+              <div class="pb-5 w-100">
+                <label for="course1" class="text">Curso</label>
+                <input id="course1" type="text" class="profile-edit">
+              </div>
+              <div class="pb-4 w-100">
+                <label for="finish1" class="text">Data de Conclusão</label>
+                <input id="finish1" type="date" class="profile-edit">
+              </div>
+            </div>
+            <!-- primeira instituição -->
           </div>
+          <!-- #academic -->
+
+          <button id="add-course" class="add-button px-3 py-2 d-flex align-items-center">
+            <img class="mr-1" src="../img/perfil/icone_adicionar.svg" height="18" alt="Ícone Adicionar">
+            Adicionar instituição
+          </button>
 
           <div class="w-100 d-flex justify-content-center">
-            <input class="profile-submit my-4 font-weight-bold" type="submit" value="ENVIAR">
+            <input class="profile-submit my-4 font-weight-bold" type="submit" value="ATUALIZAR">
           </div>
         </form>
 
@@ -156,6 +195,7 @@
     crossorigin="anonymous"></script>
 
   <script src="../js/main.js"></script>
+  <script src="../js/preferences.js"></script>
 
 </body>
 
